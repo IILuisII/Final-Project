@@ -21,6 +21,7 @@ function getPrice() {
         data: JSON.stringify({ "data": payload }),
         success: function(data) {
             $('#priceOutput').text(data[0])
+            $('#bon_voyage').text("   ...enjoy your trip!")
         }
     });
 }
